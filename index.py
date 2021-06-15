@@ -106,7 +106,7 @@ for i in range(80): #runs the for loop 80 times
         # Create a new project on Todoist of your choice, for example school work and get the ID of that project!
         # If not sure how to get your project ID, click on your project, and the URL should change above, 
         # For example, https://todoist.com/app/project/4910539201 Take the last 10 digit number and that's your Project ID
-        #                                           ↧↧↧↧↧    
+        #                                                             ↧↧↧↧↧    
         uploadAssignmentToTodoist = api.items.add(name, project_id="Project ID", due={"string": "today"}) #enter your Project Id from Todoist
         api.commit()
 
@@ -117,15 +117,14 @@ for i in range(80): #runs the for loop 80 times
 
 '''
 If you want to test if the program works, then simply fire up your preferred terminal and cd into the directory
-of this program and type python3 index.py and it the terminal returns DONE between 5 to 15 seconds, then the program 
-works!!!
+of this program and type python3 index.py and the terminal return DONE between 5 to 15 seconds the program successfully executed!
 
-If you want to deploy this program on the cloud to run everyday and do this process automatically, then first add
-this program all the files of this program to Github and make sure to save the visibilty as Private, because if you 
+If you want to deploy this program on the cloud to run it everyday and do this process automatically, then first add 
+all the files of this program to Github and make sure to save the visibilty as Private, because if you 
 leave it as Public, then anyone on Github will be able to see your login credentials as well as your Todoist API 
 Credentials. After having it on Github with the Private Visibility set, go to https://www.heroku.com, Heroku is
-a neat plateform for hosting your files and executing them from the cloud. After getting logged in, click on 
-create on the new button and click create app, after that, simply link your Github with Heroku and choose
+a neat platform for hosting your files and executing them from the cloud. After getting logged in, click on 
+the new button and click create app, after that, simply link your Github with Heroku and choose
 the directory from github to deloy, and then click on deploy branch to deploy the files from github, once the 
 deployment has been successful, it will say branch deployed, then headover to resources and heroku scheduler, it might
 ask you to add payment details to verify that its you, but you won't get charged if you don't exceed the free
